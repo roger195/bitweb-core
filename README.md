@@ -37,3 +37,13 @@ B->>A: Returns identifier
 A->>B: Submits identifier
 B->>A: Receives results
 ```
+
+# Troubleshooting
+
+---
+Make sure you're using Java 17 <br/>
+If during dockerfile build you get "./gradlew not found" then it is probably due to end of line characters added to the gradlew file by git. <br/>
+To fix the end of line characters issue:
+1. Open gradlew file in notepad++
+2. Edit-->EOL Conversion-->Unix (LF)
+3. Save file and retry build
