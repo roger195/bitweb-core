@@ -28,7 +28,7 @@ services:
       - '8000:8080'
   worker:
     build:
-      context: '../wordcloud-worker'
+      context: '../bitweb-worker'
       dockerfile: 'Dockerfile'
     depends_on:
       - 'postgresdb'
@@ -40,7 +40,7 @@ services:
       - 'POSTGRES_DB=wordcloud_db'
   frontend:
     build:
-      context: '../wordcloud-frontend'
+      context: '../bitweb-frontend'
       dockerfile: 'Dockerfile'
     ports:
       - '5173:5173'
