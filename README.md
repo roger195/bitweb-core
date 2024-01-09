@@ -1,6 +1,5 @@
 # Wordcloud app
 
----
 Upload text file up to 100MB in size and generate word count JSON and a word cloud from the most frequent words
 
 To run program make sure all the project folders(core, worker, frontend) are in the same directory.
@@ -13,8 +12,6 @@ When all the containers are up and running navigate to the following address to 
 [Application](http://localhost:5173)
 
 # Flowchart
-
----
 
 ```mermaid
 sequenceDiagram
@@ -40,7 +37,6 @@ B->>A: Receives results
 
 # Troubleshooting
 
----
 Make sure you're using Java 17 <br/>
 If during dockerfile build you get "./gradlew not found" then it is probably due to end of line characters added to the gradlew file by git. <br/>
 To fix the end of line characters issue:
